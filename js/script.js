@@ -14,11 +14,16 @@ let shoppingList = ["uova", "zucca castagna", "olive", "salame nostrano", "provo
 
 let i = 0;
 
+let ulElement = document.getElementById ("lista_della_spesa");
 
+// se l'indice i è minore della lunghezza dell'array allora verrà iniettato dentro l'ul un li che conterrà shoppingList[i]
 
-while (i < shoppingList.length){
-    document.getElementById('item');
+while (i < shoppingList.length) {
+    let liElement = document.createElement("li");
+    liElement.textContent = shoppingList[i];
+    ulElement.appendChild(liElement);
     i++;
 }
+
 
 console.log ()
